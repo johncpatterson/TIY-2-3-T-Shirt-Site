@@ -16,9 +16,9 @@ span {
 
 .navbar-brand {
   font-family: 'Pacifico', cursive;
-  font-size: 25px; }
+  font-size: 35px; }
 
-.navbar-brand a {
+.navbar-default .navbar-brand {
   color: #C6538C; }
 
 .jumbotron h1 {
