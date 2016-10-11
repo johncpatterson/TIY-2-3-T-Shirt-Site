@@ -1,5 +1,3 @@
-# TIY-2-3-T-Shirt-Cost
+# TIY-3-1-T-Shirt Site
 
-The Iron Yard Cincinnati week 2, day 3 assignment.  This was updated with the week 2, day 4 assignment as well.  This assignment added to the previous one by adding the time the item was added to the cart with moment js.  I also added some animation when the cart opens as well as using obejcts and arrays to store the product info on the page. 
-
-First Javascript assignment involving creating a shopping cart and modifying UI elements.
+The Iron Yard Cincinnati week 3, day 1 assignment.  This assignment entailed taking our t-shirt page that we built and adding Javascript to and making it into a full website.  The site contains product, contact and about pages and uses Bootstrap for the first time.  It is meant to reinforce HTML and CSS learned earlier in the course.  

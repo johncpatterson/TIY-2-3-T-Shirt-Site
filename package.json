@@ -1,21 +1,21 @@
 {
-  "name": "tiy_2_3_t_shirt_cost",
+  "name": "tiy_2_3_t_shirt_site",
   "version": "1.0.0",
-  "description": "T Shirt Cost ",
+  "description": "T Shirt Site ",
   "main": "gulpfile.js",
   "scripts": {
     "test": "gulp"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/johncpatterson/TIY-2-3-T-Shirt-Cost.git"
+    "url": "git+https://github.com/johncpatterson/TIY-2-3-T-Shirt-Site.git"
   },
   "author": "John Patterson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/johncpatterson/TIY-2-3-T-Shirt-Cost/issues"
+    "url": "https://github.com/johncpatterson/TIY-2-3-T-Shirt-Site/issues"
   },
-  "homepage": "https://github.com/johncpatterson/TIY-2-3-T-Shirt-Cost#readme",
+  "homepage": "https://github.com/johncpatterson/TIY-2-3-T-Shirt-Site#readme",
   "devDependencies": {
     "browser-sync": "^2.17.0",
     "gulp": "^3.9.1",

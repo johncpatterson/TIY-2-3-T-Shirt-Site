@@ -4,27 +4,59 @@
   box-sizing: border-box; }
 
 body {
-  background-color: white;
   color: #5CA4D7;
-  width: 100%; }
+  margin-top: 30px; }
 
 span {
   display: inline-block; }
 
-.container {
-  width: 100%;
-  position: relative;
-  margin: 5px auto;
-  overflow: hidden; }
+.navbar {
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif; }
+
+.navbar-brand {
+  font-family: 'Pacifico', cursive;
+  font-size: 25px; }
+
+.navbar-brand a {
+  color: #C6538C; }
+
+.jumbotron h1 {
+  font-family: 'Pacifico', cursive; }
+
+.jumbotron p {
+  font-family: 'Raleway', sans-serif; }
+
+#map {
+  height: 100%; }
+
+.btn {
+  background: #C6538C;
+  background-image: -webkit-linear-gradient(top, #C6538C, #e03a8d);
+  background-image: -moz-linear-gradient(top, #C6538C, #e03a8d);
+  background-image: -ms-linear-gradient(top, #C6538C, #e03a8d);
+  background-image: -o-linear-gradient(top, #C6538C, #e03a8d);
+  background-image: linear-gradient(to bottom, #C6538C, #e03a8d);
+  -webkit-border-radius: 13;
+  -moz-border-radius: 13;
+  border-radius: 13px;
+  text-shadow: 1px 1px 3px #666666;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 23px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none; }
+
+.btn:hover {
+  background: #e03a8d;
+  text-decoration: none; }
 
 .left_shirt,
 .middle_shirt,
 .right_shirt {
-  display: inline-block;
-  width: 32.92929%;
   height: 520px;
   margin: 20px auto;
-  margin-top: 10px;
+  margin-top: 40px;
   padding: 5px 25px 10px 25px; }
 
 .flip_container {
@@ -54,7 +86,8 @@ span {
 .back {
   transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
-  backface-visibility: visible; }
+  backface-visibility: visible;
+  left: 20px; }
 
 .flip_container:hover .shirt {
   transform: rotateY(180deg);
@@ -112,11 +145,10 @@ span {
   font-family: 'Raleway', sans-serif; }
 
 .cart {
-  width: 420px;
-  padding-top: 10px;
+  width: 100%;
   padding-bottom: 10px;
-  padding-right: 30px;
-  font-size: 20px;
+  margin-top: 20px;
+  font-size: 15px;
   text-align: right;
   font-family: 'Raleway', sans-serif;
   z-index: 10;
@@ -130,7 +162,7 @@ span {
   color: white;
   border-radius: 5px;
   animation-name: showCartContents;
-  animation-duration: 1s; }
+  animation-duration: .7s; }
 
 span .time {
   font-size: 13px; }
@@ -147,7 +179,9 @@ span .time {
   padding-left: 8px; }
 
 i.fa-shopping-basket {
-  font-size: 35px; }
+  font-size: 35px;
+  margin-top: 6px;
+  margin-left: 5px; }
 
 .small_pic_1,
 .small_pic_2,
@@ -156,7 +190,7 @@ i.fa-shopping-basket {
 .small_pic_5 {
   display: inline-block;
   width: 20%;
-  height: 60px;
+  height: 69px;
   color: #5CA4D7;
   text-align: center;
   border-top: 0px;
@@ -223,6 +257,16 @@ i.fa-shopping-basket {
 .small_pic_4_color_orange {
   border: 2px solid white; }
 
+.shirt_name,
+.shirt_color,
+.shirt_price {
+  font-size: 33px; }
+
+h1 .shirt_name,
+.shirt_color,
+.shirt_price {
+  font-size: 30px; }
+
 .text_left {
   text-align: left;
   width: 78%; }
@@ -242,7 +286,7 @@ i.fa-shopping-basket {
 .dropdown-content-shirts {
   display: none;
   position: absolute;
-  top: -270px;
+  top: -265px;
   left: -67px;
   background-color: #f9f9f9;
   padding: 25px; }
@@ -250,7 +294,7 @@ i.fa-shopping-basket {
 .dropdown-content-colors {
   display: none;
   position: absolute;
-  top: -135px;
+  top: -145px;
   left: -50px;
   background-color: #f9f9f9;
   padding: 8px;
@@ -328,48 +372,20 @@ i.fa-shopping-basket {
 
 @keyframes showCartContents {
   0% {
-    margin-right: -420px;
     opacity: 0; }
   30% {
-    opacity: .35; }
+    opacity: .30; }
+  50% {
+    opacity: .50; }
   70% {
-    opacity: .65; }
+    opacity: .70; }
   100% {
     margin-right: 0;
     opacity: 1; } }
 
 /*media queries*/
 @media screen and (max-width: 990px) {
-  .left_shirt,
-  .middle_shirt,
-  .right_shirt {
-    width: 100%; }
-  .small_pic_1,
-  .small_pic_2,
-  .small_pic_3,
-  .small_pic_4,
-  .small_pic_5 {
-    font-size: 25px; }
-  .bottom {
-    font-size: 35px; }
-  .shirt {
-    max-width: 100%; }
-  .dropdown-content-shirts {
-    display: none;
-    position: absolute;
-    top: -275px;
-    left: -67px;
-    background-color: #f9f9f9;
-    padding: 25px; }
-  .dropdown-content-colors {
-    display: none;
-    position: absolute;
-    top: -133px;
-    left: -50px;
-    background-color: #f9f9f9;
-    padding: 8px;
-    width: 125px; }
-  .cart {
-    width: 100%; }
   #cart_stuff_to_hide {
-    width: 97%; } }
+    width: 96%;
+    top: 40px;
+    position: absolute; } }
