@@ -30,6 +30,10 @@ span {
 #map {
   height: 100%; }
 
+.social_network_icon {
+  font-size: 75px;
+  padding: 10px; }
+
 .btn {
   background: #C6538C;
   background-image: -webkit-linear-gradient(top, #C6538C, #e03a8d);
