@@ -1,62 +1,63 @@
 // Sass variables
-    $primary-color: white;
-    $primary-color-2: lightgray;
-    $font-color: #5CA4D7;
-    $border-color: #5CA4D7;
-    // Sass imports
-    // @import 'reset';
-    // // Sass mixins
-    @mixin border-box {
-        -webkit-box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        box-sizing: border-box;
-    }
-    
-    // element selectors
-    * {
-        @include border-box;
-    }
-    
-    body {
-        // background-color: $primary-color;
-        color: $font-color;
-        // width: 100%;
-        margin-top: 30px;
-    }
-    
-    span {
-        display: inline-block;
-    }
-    
-    .navbar {
-        font-size: 18px;
-        font-family: 'Raleway', sans-serif;
-    }
-    
-    .navbar-brand {
-        font-family: 'Pacifico', cursive;
-        font-size: 25px;
-    }
-    
-    .navbar-brand a {
-        color: #C6538C;
-    }
-    
-    .jumbotron h1 {
-        font-family: 'Pacifico', cursive;
-    }
-    
-    .jumbotron p {
-        font-family: 'Raleway', sans-serif;
-       
-    }
-    #map {
-        height: 100%;
-    }
-     // .google_map {
-     //        height: 400px;
-     //        width: 100%;
-     //    }
+$primary-color: white;
+$primary-color-2: lightgray;
+$font-color: #5CA4D7;
+$border-color: #5CA4D7;
+// Sass imports
+// @import 'reset';
+// // Sass mixins
+@mixin border-box {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+// element selectors
+* {
+    @include border-box;
+}
+
+body {
+    // background-color: $primary-color;
+    color: $font-color;
+    // width: 100%;
+    margin-top: 30px;
+}
+
+span {
+    display: inline-block;
+}
+
+.navbar {
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+}
+
+.navbar-brand a {
+    color: #C6538C;
+}
+
+.jumbotron h1 {
+    font-family: 'Pacifico', cursive;
+}
+
+.jumbotron p {
+    font-family: 'Raleway', sans-serif;
+}
+
+#map {
+    height: 100%;
+}
+
+// .google_map {
+//        height: 400px;
+//        width: 100%;
+//    }
 .btn {
     background: #C6538C;
     background-image: -webkit-linear-gradient(top, #C6538C, #e03a8d);
@@ -74,11 +75,14 @@
     padding: 10px 20px 10px 20px;
     text-decoration: none;
 }
+
 .btn:hover {
     background: #e03a8d;
     text-decoration: none;
 }
+
 .banner_image {}
+
 // .col-md-6 img {
 //     height: 600px;
 //     width: 400px;
@@ -91,9 +95,11 @@
     margin-top: 40px;
     padding: 5px 25px 10px 25px;
 }
+
 .flip_container {
     perspective: 1000px;
 }
+
 .shirt {
     max-width: 90%;
     height: 320px;
@@ -103,6 +109,7 @@
     transition: 0.6s;
     transform-style: preserve-3d;
 }
+
 .front,
 .back {
     backface-visibility: hidden;
@@ -110,21 +117,25 @@
     top: 0;
     left: 0;
 }
+
 .front {
     z-index: 2;
     transform: rotateY(0deg);
     -moz-transform: rotateY(0deg);
 }
+
 .back {
     transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
     backface-visibility: visible;
     left: 20px;
 }
+
 .flip_container:hover .shirt {
     transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
 }
+
 .shirt_back {
     position: absolute;
     color: white;
@@ -134,6 +145,7 @@
     left: 50px;
     top: 20px;
 }
+
 .top {
     position: relative;
     margin: 0px auto 0px auto;
@@ -143,6 +155,7 @@
     border-bottom: 3px solid #5CA4D7;
     border-left: 3px solid #5CA4D7;
 }
+
 .top_right {
     display: inline-block;
     position: absolute;
@@ -154,10 +167,12 @@
     border-left: 3px solid #5CA4D7;
     vertical-align: middle;
 }
+
 .top_right:hover {
     background-color: #5CA4D7;
     color: white;
 }
+
 .middle {
     display: block;
     margin: 0px auto;
@@ -167,6 +182,7 @@
     border-bottom: 0px;
     border-left: 3px solid #5CA4D7;
 }
+
 .bottom {
     margin: 0px;
     padding: 20px 5px 0px 8px;
@@ -176,6 +192,7 @@
     font-size: 27px;
     font-family: 'Raleway', sans-serif;
 }
+
 .cart {
     width: 100%;
     padding-bottom: 10px;
@@ -186,6 +203,7 @@
     z-index: 10;
     float: right;
 }
+
 #cart_stuff_to_hide {
     width: 100%;
     padding-right: 10px;
@@ -196,25 +214,31 @@
     animation-name: showCartContents;
     animation-duration: .7s;
 }
+
 span .time {
     font-size: 13px;
 }
+
 .hidden {
     display: none;
 }
+
 .clicked {
     animation-name: movePopUpDown;
     animation-duration: .3s;
 }
+
 .fa-repeat {
     padding-top: 8px;
     padding-left: 8px;
 }
+
 i.fa-shopping-basket {
     font-size: 35px;
     margin-top: 6px;
     margin-left: 5px;
 }
+
 .small_pic_1,
 .small_pic_2,
 .small_pic_3,
@@ -234,12 +258,15 @@ i.fa-shopping-basket {
     vertical-align: middle;
     font-size: 23px;
 }
+
 .small_pic_5.active {
     background-color: #5CA4D7
 }
+
 .small_pic_5.active i {
     color: white;
 }
+
 .small_pic_1:hover,
 .small_pic_2:hover,
 .small_pic_3:hover,
@@ -248,76 +275,94 @@ i.fa-shopping-basket {
     background-color: #5CA4D7;
     color: white;
 }
+
 .small_pic_1 {
     border-left: 0;
     border-right: 0;
 }
+
 .small_pic_3 {
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
 }
+
 .small_pic_2,
 .small_pic_3,
 .small_pic_4,
 .small_pic_5 {
     border-right: 0;
 }
+
 .small_pic_4_color_blue {
     width: 30px;
     height: 30px;
     margin: -5px auto;
     background-color: #5CA4D7;
 }
+
 .small_pic_4_color_pink {
     width: 30px;
     height: 30px;
     margin: -5px auto;
     background-color: #D482AA;
 }
+
 .small_pic_4_color_orange {
     width: 30px;
     height: 30px;
     margin: -5px auto;
     background-color: #DCB07D;
 }
+
 .small_pic_4:hover .small_pic_4_color_blue {
     border: 2px solid white;
 }
+
 .small_pic_4_color_pink {
     border: 2px solid white;
 }
+
 .small_pic_4_color_orange {
     border: 2px solid white;
 }
+
 .shirt_name,
 .shirt_color,
 .shirt_price {
     font-size: 33px;
 }
+
 h1 .shirt_name,
 .shirt_color,
 .shirt_price {
     font-size: 30px;
 }
+
 .text_left {
     text-align: left;
     width: 78%;
 }
+
 .text_right {
     text-align: right;
     width: 19%;
     font-weight: bold;
 }
 
+
 /*Dropdown menus*/
 
+
 /* The container <div> - needed to position the dropdown content */
+
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
+
 /* Dropdown Content (Hidden by Default) */
+
 .dropdown-content-shirts {
     display: none;
     position: absolute;
@@ -326,6 +371,7 @@ h1 .shirt_name,
     background-color: #f9f9f9;
     padding: 25px;
 }
+
 .dropdown-content-colors {
     display: none;
     position: absolute;
@@ -335,6 +381,7 @@ h1 .shirt_name,
     padding: 8px;
     width: 125px;
 }
+
 .dropdown_blue,
 .dropdown_pink,
 .dropdown_orange,
@@ -345,20 +392,26 @@ h1 .shirt_name,
     padding: 0px;
     margin: 0px;
 }
+
 .dropdown_blue {
     background-color: #5CA4D7;
 }
+
 .dropdown_pink {
     background-color: #D482AA;
 }
+
 .dropdown_orange {
     background-color: #DCB07D;
 }
+
 .dropdown_green {
     background-color: #21bc67;
 }
 
+
 /* Show the dropdown menu on hover */
+
 .small_pic_3:hover .dropdown-content-shirts {
     display: block;
     background-color: white;
@@ -366,6 +419,7 @@ h1 .shirt_name,
     animation-name: movePopUpDown;
     animation-duration: .3s;
 }
+
 .small_pic_4:hover .dropdown-content-colors {
     display: block;
     background-color: white;
@@ -374,7 +428,9 @@ h1 .shirt_name,
     animation-duration: .3s;
 }
 
+
 /*bottom border arrow*/
+
 .arrow_down {
     position: absolute;
     width: 0;
@@ -386,58 +442,59 @@ h1 .shirt_name,
     bottom: -8px;
     animation-name: movePopUpDown;
 }
-.dropdown-content-shirts {
-    position: absolute;
-    background: #FFFFFF;
-    border: 3px solid #5CA4D7;
-}
+
 .dropdown-content-shirts {
     position: absolute;
     background: #FFFFFF;
     border: 3px solid #5CA4D7;
 }
 
+.dropdown-content-shirts {
+    position: absolute;
+    background: #FFFFFF;
+    border: 3px solid #5CA4D7;
+}
+
+
 /*animation*/
+
 @keyframes movePopUpDown {
     0% {
         margin-top: -40px;
         opacity: 0;
     }
-    
     30% {
         opacity: .6;
     }
-    
     100% {
         margin-top: 0;
         opacity: 1;
     }
 }
+
 @keyframes showCartContents {
     0% {
         // margin-right: -420px;
         opacity: 0;
     }
-    
     30% {
         opacity: .30;
     }
-    
     50% {
         opacity: .50;
     }
-    
     70% {
         opacity: .70;
     }
-    
     100% {
         margin-right: 0;
         opacity: 1;
     }
 }
 
+
 /*media queries*/
+
 @media screen and (max-width: 990px) {
     #cart_stuff_to_hide {
         width: 96%;
